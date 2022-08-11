@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB1001-BookTrackingApplication", "WEB1001-BookTrackingApplication\WEB1001-BookTrackingApplication.csproj", "{C41C1BFC-F41F-45BF-8E83-44278993F5F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C41C1BFC-F41F-45BF-8E83-44278993F5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41C1BFC-F41F-45BF-8E83-44278993F5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41C1BFC-F41F-45BF-8E83-44278993F5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41C1BFC-F41F-45BF-8E83-44278993F5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9277FCDA-84AE-4344-9908-F2EAD05E431E}
+	EndGlobalSection
+EndGlobal
