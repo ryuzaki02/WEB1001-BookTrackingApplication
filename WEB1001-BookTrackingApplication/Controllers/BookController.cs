@@ -46,6 +46,7 @@ namespace WEB1001_BookTrackingApplication
         // GET: Book/Create
         public IActionResult Create()
         {
+            // Fetching categories from database, created select list item and injected to page
             ViewData["Categories"] = _context.Categories.Select(b => new SelectListItem(b.Description, b.CategoryId.ToString())).ToList();
             return View();
         }
@@ -57,6 +58,7 @@ namespace WEB1001_BookTrackingApplication
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([FromForm] Book book)
         {
+            // Fetching category for category id to validate the model
             var localCategory = _context.Categories.Include("CategoryType").Where(b => b.CategoryId == book.Category.CategoryId).FirstOrDefault();
             if (localCategory != null)
             {
@@ -86,6 +88,7 @@ namespace WEB1001_BookTrackingApplication
             {
                 return NotFound();
             }
+            // Fetching categories from database, created select list item and injected to page
             ViewData["Categories"] = _context.Categories.Select(b => new SelectListItem(b.Description, b.CategoryId.ToString())).ToList();
             return View(book);
         }
@@ -101,7 +104,7 @@ namespace WEB1001_BookTrackingApplication
             {
                 return NotFound();
             }
-
+            // Fetching category for category id to validate the model
             var localCategory = _context.Categories.Include("CategoryType").Where(b => b.CategoryId == book.Category.CategoryId).FirstOrDefault();
             if (localCategory != null)
             {
