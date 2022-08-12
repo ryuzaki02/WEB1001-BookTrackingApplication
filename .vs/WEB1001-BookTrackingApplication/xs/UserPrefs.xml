@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{C41C1BFC-F41F-45BF-8E83-44278993F5F9}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/Controllers/HomeController.cs" relfile="WEB1001-BookTrackingApplication/Controllers/HomeController.cs" line="23" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="WEB1001-BookTrackingApplication/BookController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WEB1001-BookTrackingApplication/Views/Book/Create.cshtml">
     <Files>
       <File FileName="WEB1001-BookTrackingApplication/Models/Book.cs" Line="13" Column="13" />
       <File FileName="WEB1001-BookTrackingApplication/Models/Category.cs" Line="11" Column="13" />
       <File FileName="WEB1001-BookTrackingApplication/Models/CategoryType.cs" Line="9" Column="28" />
-      <File FileName="WEB1001-BookTrackingApplication/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="WEB1001-BookTrackingApplication/Views/Home/Index.cshtml" Line="7" Column="43" />
       <File FileName="WEB1001-BookTrackingApplication/Controllers/HomeController.cs" Line="1" Column="1" />
       <File FileName="WEB1001-BookTrackingApplication/Startup.cs" Line="56" Column="47" />
       <File FileName="WEB1001-BookTrackingApplication/Models/ErrorViewModel.cs" Line="1" Column="1" />
@@ -21,18 +20,21 @@
       <File FileName="WEB1001-BookTrackingApplication/Program.cs" Line="1" Column="1" />
       <File FileName="WEB1001-BookTrackingApplication/Views/Category/Create.cshtml" Line="16" Column="13" />
       <File FileName="WEB1001-BookTrackingApplication/CategoryController.cs" Line="63" Column="58" />
-      <File FileName="WEB1001-BookTrackingApplication/Views/Book/Create.cshtml" Line="18" Column="76" />
+      <File FileName="WEB1001-BookTrackingApplication/Views/Book/Create.cshtml" Line="21" Column="109" />
+      <File FileName="WEB1001-BookTrackingApplication/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="WEB1001-BookTrackingApplication/Views/Shared/_Layout.cshtml" Line="29" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WEB1001-BookTrackingApplication" expanded="True">
             <Node name="WEB1001-BookTrackingApplication" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" selected="True" />
               <Node name="Views" expanded="True">
-                <Node name="Book" expanded="True" />
+                <Node name="Book" expanded="True">
+                  <Node name="Create.cshtml" selected="True" />
+                </Node>
                 <Node name="Category" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -43,7 +45,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.WEB1001-BookTrackingApplication PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>

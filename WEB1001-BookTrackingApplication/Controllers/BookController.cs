@@ -33,7 +33,7 @@ namespace WEB1001_BookTrackingApplication
                 return NotFound();
             }
 
-            var book = await _context.Books
+            var book = await _context.Books.Include("Category").Include("Category.CategoryType")
                 .FirstOrDefaultAsync(m => m.BookId == id);
             if (book == null)
             {
@@ -75,7 +75,7 @@ namespace WEB1001_BookTrackingApplication
 
         // GET: Book/Edit/5
         public async Task<IActionResult> Edit(int? id)
-        {
+        {            
             if (id == null)
             {
                 return NotFound();
@@ -86,6 +86,7 @@ namespace WEB1001_BookTrackingApplication
             {
                 return NotFound();
             }
+            ViewData["Categories"] = _context.Categories.Select(b => new SelectListItem(b.Description, b.CategoryId.ToString())).ToList();
             return View(book);
         }
 
@@ -94,11 +95,19 @@ namespace WEB1001_BookTrackingApplication
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author")] Book book)
+        public async Task<IActionResult> Edit(int id, [FromForm] Book book)
         {
             if (id != book.BookId)
             {
                 return NotFound();
+            }
+
+            var localCategory = _context.Categories.Include("CategoryType").Where(b => b.CategoryId == book.Category.CategoryId).FirstOrDefault();
+            if (localCategory != null)
+            {
+                book.Category = localCategory;
+                ModelState.ClearValidationState("Category");
+                this.TryValidateModel(book);
             }
 
             if (ModelState.IsValid)

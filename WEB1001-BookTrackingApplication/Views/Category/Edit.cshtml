@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Edit";
+    var categoryTypes = (IEnumerable<SelectListItem>)ViewData["CategoryTypes"];
 }
 
 <h1>Edit</h1>
@@ -13,6 +14,11 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="CategoryId" />
+            <div class="form-group">
+                <label asp-for="CategoryType.CategoryTypeId"></label>
+                <select asp-for="CategoryType.CategoryTypeId" asp-items="categoryTypes"></select>
+                <span asp-validation-for="CategoryType.CategoryTypeId" />
+            </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
                 <input asp-for="Description" class="form-control" />

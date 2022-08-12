@@ -18,6 +18,9 @@
                 <select asp-for="CategoryType.CategoryTypeId" asp-items="categoryTypes"></select>
                 <span asp-validation-for="CategoryType.CategoryTypeId" />
             </div>
+            <p>
+                <a asp-controller="CategoryType" asp-action="Create">Create New Category Type</a>
+            </p>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
                 <input asp-for="Description" class="form-control" />
