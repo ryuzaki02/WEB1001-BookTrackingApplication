@@ -46,6 +46,7 @@ namespace WEB1001_BookTrackingApplication
         // GET: Category/Create
         public IActionResult Create()
         {
+            ViewData["CategoryTypes"] = _context.CategoryTypes.Select(b => new SelectListItem(b.Name, b.CategoryTypeId.ToString())).ToList();
             return View();
         }
 
@@ -54,8 +55,15 @@ namespace WEB1001_BookTrackingApplication
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CategoryId,Description")] Category category)
+        public async Task<IActionResult> Create([FromForm] Category category)
         {
+            var localCategoryType = _context.CategoryTypes.Where(b => b.CategoryTypeId == category.CategoryType.CategoryTypeId).FirstOrDefault();
+            if (localCategoryType != null)
+            {
+                category.CategoryType = localCategoryType;
+                ModelState.ClearValidationState("CategoryType");
+                this.TryValidateModel(category);
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(category);

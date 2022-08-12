@@ -26,11 +26,16 @@ namespace WEB1001_BookTrackingApplication.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("BookId");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Books");
                 });
@@ -41,7 +46,7 @@ namespace WEB1001_BookTrackingApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("BookId")
+                    b.Property<int?>("CategoryTypeId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
@@ -50,7 +55,7 @@ namespace WEB1001_BookTrackingApplication.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.HasIndex("BookId");
+                    b.HasIndex("CategoryTypeId");
 
                     b.ToTable("Categories");
                 });
@@ -61,42 +66,31 @@ namespace WEB1001_BookTrackingApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("CategoryId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("CategoryTypeId");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("CategoryTypes");
-                });
-
-            modelBuilder.Entity("WEB1001_BookTrackingApplication.Models.Category", b =>
-                {
-                    b.HasOne("WEB1001_BookTrackingApplication.Models.Book", null)
-                        .WithMany("Categories")
-                        .HasForeignKey("BookId");
-                });
-
-            modelBuilder.Entity("WEB1001_BookTrackingApplication.Models.CategoryType", b =>
-                {
-                    b.HasOne("WEB1001_BookTrackingApplication.Models.Category", null)
-                        .WithMany("CategoryTypes")
-                        .HasForeignKey("CategoryId");
                 });
 
             modelBuilder.Entity("WEB1001_BookTrackingApplication.Models.Book", b =>
                 {
-                    b.Navigation("Categories");
+                    b.HasOne("WEB1001_BookTrackingApplication.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId");
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("WEB1001_BookTrackingApplication.Models.Category", b =>
                 {
-                    b.Navigation("CategoryTypes");
+                    b.HasOne("WEB1001_BookTrackingApplication.Models.CategoryType", "CategoryType")
+                        .WithMany()
+                        .HasForeignKey("CategoryTypeId");
+
+                    b.Navigation("CategoryType");
                 });
 #pragma warning restore 612, 618
         }

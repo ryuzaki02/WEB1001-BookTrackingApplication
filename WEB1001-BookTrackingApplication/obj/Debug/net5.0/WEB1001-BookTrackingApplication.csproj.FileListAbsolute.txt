@@ -169,6 +169,11 @@
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/WEB1001-BookTrackingApplication.pdb
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/WEB1001-BookTrackingApplication.genruntimeconfig.cache
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/ref/WEB1001-BookTrackingApplication.dll
+/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Create.cshtml.g.cs
+/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Delete.cshtml.g.cs
+/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Details.cshtml.g.cs
+/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Edit.cshtml.g.cs
+/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Index.cshtml.g.cs
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/Book/Create.cshtml.g.cs
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/Book/Delete.cshtml.g.cs
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/Book/Details.cshtml.g.cs
@@ -179,8 +184,3 @@
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/Category/Details.cshtml.g.cs
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/Category/Edit.cshtml.g.cs
 /Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/Category/Index.cshtml.g.cs
-/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Create.cshtml.g.cs
-/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Delete.cshtml.g.cs
-/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Details.cshtml.g.cs
-/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Edit.cshtml.g.cs
-/Users/aman/Documents/Projects/Cambrian-Web/WEB1001-BookTrackingApplication/WEB1001-BookTrackingApplication/obj/Debug/net5.0/Razor/Views/CategoryType/Index.cshtml.g.cs

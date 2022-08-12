@@ -11,8 +11,9 @@ namespace WEB1001_BookTrackingApplication.Models
 		[Required]
 		public string Title { get; set; }
 		[Required]
-		public List<Category> Categories { get; set; }
+		public Category Category { get; set; }
 		[Required]
+        [EmailAddress]
 		public string Author { get; set; }
 	}
 }

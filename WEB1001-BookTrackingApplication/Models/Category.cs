@@ -9,7 +9,7 @@ namespace WEB1001_BookTrackingApplication.Models
 		[Key]
 		public int CategoryId { get; set; }
 		[Required]
-		public List<CategoryType> CategoryTypes { get; set; }
+		public CategoryType CategoryType { get; set; }
 		[Required]
 		public string Description { get; set; }
 	}
